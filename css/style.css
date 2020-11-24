@@ -9,7 +9,7 @@ body {
     letter-spacing: normal;
     color: #695A59;
 
-    background-color: #E5E5E5;
+    background-color: #EEE8E6;
 }
 
 .container {
@@ -327,4 +327,134 @@ header:not(.mission-header) {
 .about-content > img {
     grid-column: 2/9;
     margin: 20px 0;
+}
+
+.catalog {
+    padding-bottom: 130px;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 0 20px;
+}
+
+.catalog-header {
+    grid-column: 1/9;
+}
+
+.catalog-header h2 {
+    max-width: 510px;
+    margin-left: 99px;
+}
+
+.catalog-list {
+    grid-column: 1/-1;
+
+    list-style: none;
+    margin: 30px 0 0 0;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
+
+.catalog-item {
+    grid-column: span 4;
+
+    display: grid;
+    grid-template-columns: 3fr;
+    grid-template-rows: 240px auto;
+
+    background: white;
+}
+
+.catalog-item-horizontal {
+    grid-column: span 6;
+
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+}
+
+.catalog-item-horizontal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.catalog-item-content {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    gap: 20px 0;
+    padding: 36px 35px 40px 36px;
+}
+
+.catalog-item-title {
+    margin: 0;
+
+    font-family: "Old Standard TT", sans-serif;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 36px;
+}
+
+.catalog-item-price {
+    margin: 0;
+
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 24px;
+    color: #343235;
+}
+
+.catalog-item-text {
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: lowercase;
+    opacity: 0.6;
+}
+
+.catalog-item-link {
+    display: inline-block;
+    margin-top: 12px;
+
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    color: #9A8584;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    position: relative;
+}
+
+.catalog-item-link::before {
+    content: "";
+
+    width: 80px;
+    border-top: 1px solid #9A8584;
+
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    transform: translateY(-50%);
+}
+
+.catalog-item-link::after {
+    content: "";
+
+    width: 7px;
+    height: 7px;
+    border: 1px solid #9A8584;
+    border-bottom: transparent;
+    border-left: transparent;
+    border-radius: 1px;
+
+    position: absolute;
+    top: 50%;
+    left: 171px;
+    transform: translateY(-50%) rotate(45deg);
 }
