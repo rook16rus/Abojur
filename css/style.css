@@ -32,7 +32,7 @@ header, .footer-header {
 }
 
 header:not(.mission-header) {
-    grid-column: 1/9;
+    grid-column: 1/10;
 }
 
 .section-title {
@@ -468,7 +468,6 @@ header:not(.mission-header) {
 }
 
 .projects-header {
-    grid-column: 1/9;
     margin-bottom: 30px;
 }
 
@@ -693,5 +692,52 @@ header:not(.mission-header) {
 
 .team {
     padding-top: 120px;
+    padding-bottom: 120px;
     background-color: #343235;
+}
+
+.team-wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 0 20px;
+}
+
+.team-header {
+    margin-bottom: 45px;
+}
+
+.team-title {
+    max-width: 460px;
+    margin-left: 99px;
+    color: #EEE9E6;
+}
+
+.team-header .title-description {
+    color: #9A8584;
+    opacity: 0.1;
+}
+
+.team-content {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 0 20px;
+}
+
+.team-content p {
+    color: #FBF3F0;
+    margin: 0 0 25px;
+}
+
+.team-content .aside-right-text {
+    grid-column: 9/-1;
+}
+
+.team-text {
+    grid-column: 2/8;
+}
+
+.team-content img {
+    grid-column: 1/-1;
+    margin-top: 15px;
 }
