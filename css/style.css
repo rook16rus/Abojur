@@ -772,3 +772,212 @@ header:not(.mission-header) {
 .collection-item-big {
     grid-row: span 2;
 }
+
+.main-footer {
+    background: url("../img/footer-bg.png") no-repeat center;
+    background-size: cover;
+}
+
+.footer-wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 0 20px;
+}
+
+.footer-header {
+    grid-column: 1/7;
+    margin-top: 90px;
+}
+
+.footer-title {
+    max-width: 470px;
+    margin-left: 99px;
+    color: #EEE9E6;
+}
+
+.footer-header .title-description {
+    color: #9A8584;
+    opacity: 0.1;
+}
+
+.footer-text, .feedback {
+    grid-column: 2/7;
+}
+
+.footer-text {
+    margin: 36px 0 44px;
+    color: #EEE9E6;
+    opacity: 0.6;
+}
+
+.feedback {
+    margin-bottom: 80px;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: auto;
+    gap: 0 20px;
+    grid-template-areas:
+        "name name name name name"
+        "phone phone phone phone phone"
+        "time time polity polity polity"
+        "button button button button button";
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: #F6EDE9;
+}
+
+.feedback fieldset {
+    border: 0;
+    margin: 0 0 35px;
+    padding: 0;
+}
+
+.field {
+    width: 100%;
+    padding: 0 20px 16px 0;
+    border: none;
+    border-bottom: 1px solid #A78587;
+    outline: none;
+    box-sizing: border-box;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: #F6EDE9;
+    background: transparent;
+}
+
+.field::placeholder {
+    font-size: 14px;
+    line-height: 18px;
+    color: #F6EDE9;
+}
+
+.feedback-name {
+    grid-area: name;
+}
+
+.feedback-phone {
+    grid-area: phone;
+}
+
+fieldset.feedback-time {
+    grid-area: time;
+    margin: 10px 0 60px;
+}
+
+.feedback-time select {
+    padding: 16px 40px 16px 20px;
+    background: transparent;
+    border: 1px solid #A78587;
+    appearance: none;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: #F6EDE9;
+}
+
+.select-wrapper {
+    position: relative;
+}
+
+.select-wrapper::after {
+    content: "";
+
+    width: 7px;
+    height: 7px;
+    border: 1px solid #A78587;
+    border-left: transparent;
+    border-bottom: transparent;
+
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-65%) rotate(135deg);
+}
+
+.feedback-time option {
+    color: black;
+}
+
+fieldset.feedback-polity {
+    grid-area: polity;
+    margin: 15px 0 60px;
+}
+
+.label-wrapper {
+    position: relative;
+}
+
+input[type="checkbox"]:checked + .label-wrapper::after {
+    content: "";
+
+    width: 25px;
+    height: 7px;
+    border: 1px solid #A78587;
+    border-left: transparent;
+    border-bottom: transparent;
+    box-shadow: 3px 0 0 4px #343235;
+    background-color: transparent;
+
+    position: absolute;
+    left: 45px;
+    top: 50%;
+    transform: translateY(-110%) rotate(135deg);
+}
+
+.feedback-polity label {
+    display: inline-block;
+    margin-left: 80px;
+    position: relative;
+}
+
+input[type="checkbox"] + .label-wrapper label::before {
+    content: "";
+
+    width: 27px;
+    height: 27px;
+    border: 1px solid #A78587;
+    background-color: transparent;
+
+
+    position: absolute;
+    left: -44px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+input[type="checkbox"]:checked + .label-wrapper label::after {
+    content: "";
+
+    width: 25px;
+    height: 7px;
+    border: 1px solid #A78587;
+    border-left: transparent;
+    border-bottom: transparent;
+    box-shadow: inset 3px 0 0 5px #343235;
+    background-color: transparent;
+
+    position: absolute;
+    left: -35px;
+    top: 50%;
+    transform: translateY(-110%) rotate(135deg);
+}
+
+.feedback-button {
+    grid-area: button;
+}
+
+.main-footer img {
+    grid-column: 8/-1;
+    grid-row: 1/4;
+
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

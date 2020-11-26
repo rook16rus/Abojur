@@ -177,7 +177,7 @@
                     <h2 class="section-title collection-title">Метаморфозы</h2>
                     <p class="title-description">Collections</p>
                 </header>
-                <p class="collection-text">В нашем ассортименте представлено 258 коллекций, новые поставки происходят регулярно так как мы следим   за трендами, актуальными новинками и посещаем международные выставки.</p>
+                <p class="collection-text">В нашем ассортименте представлено 258 коллекций, новые поставки происходят регулярно так как мы следим за трендами, актуальными новинками и посещаем международные выставки.</p>
                 <ul class="collection-list">
                     <li class="collection-item collection-item-big"><img src="img/collection-photo-1.jpg" width="573" height="500" alt="Дизайн интерьера"></li>
                     <li class="collection-item"><img src="img/collection-photo-4.jpg" width="573" height="240" alt="Дизайн интерьера"></li>
@@ -191,34 +191,40 @@
 
         <footer class="main-footer">
             <div class="container">
-                <div class="footer-header">
-                    <h2 class="section-title footer-title">Мы всегда рады общению</h2>
-                    <p class="title-description">Talk</p>
+                <div class="footer-wrapper">
+                    <div class="footer-header">
+                        <h2 class="section-title footer-title">Мы всегда рады общению</h2>
+                        <p class="title-description">Talk</p>
+                    </div>
+                    <p class="footer-text">Оставьте свои контакты. Менеджер перезвонит в удобное вам время и ответит на все вопросы.</p>
+                    <form method="post" class="feedback">
+                        <fieldset class="feedback-name">
+                            <label class="visually-hidden" for="feedback-name">Ваше имя</label>
+                            <input type="text" class="field" id="feedback-name" placeholder="Ваше имя">
+                        </fieldset>
+                        <fieldset class="feedback-phone">
+                            <label class="visually-hidden" for="feedback-phone">Введите телефон</label>
+                            <input type="text" class="field" id="feedback-phone" placeholder="Введите телефон">
+                        </fieldset>
+                        <fieldset class="feedback-time">
+                            <label class="visually-hidden" for="feedback-time">Выберите время</label>
+                            <div class="select-wrapper">
+                                <select class="select" name="feedback-time" id="feedback-time">
+                                    <option value="Удобное время" selected>Удобное время</option>
+                                    <option value="Неудобное время">Неудобное время</option>
+                                </select>
+                            </div>
+                        </fieldset>
+                        <fieldset class="feedback-polity">
+                            <input class="visually-hidden" type="checkbox" name="feedback-polity" id="feedback-polity">
+                            <div class="label-wrapper">
+                                <label for="feedback-polity">Согласие на обработку персональных данных</label>
+                            </div>
+                        </fieldset>
+                        <button type="button" class="button feedback-button">Оставить заявку</button>
+                    </form>
+                    <img src="img/map.jpg" width="474" height="734" alt="Карта">
                 </div>
-                <p class="footer-text">Оставьте свои контакты. Менеджер перезвонит в удобное вам время и ответит на все вопросы.</p>
-                <form method="post" class="feedback">
-                    <fieldset class="feedback-name">
-                        <label for="feedback-name">Ваше имя</label>
-                        <input type="text" class="field" id="feedback-name" placeholder="Ваше имя">
-                    </fieldset>
-                    <fieldset class="feedback-phone">
-                        <label for="feedback-phone">Введите телефон</label>
-                        <input type="text" class="field" id="feedback-phone" placeholder="Введите телефон">
-                    </fieldset>
-                    <fieldset class="feedback-time">
-                        <label for="feedback-time"></label>
-                        <select class="select" name="feedback-time" id="feedback-time">
-                            <option value="Удобное время" selected>Удобное время</option>
-                            <option value="Неудобное время">Неудобное время</option>
-                        </select>
-                    </fieldset>
-                    <fieldset class="feedback-polity">
-                        <input type="checkbox" name="feedback-polity" id="feedback-polity">
-                        <label for="feedback-polity">Согласие на обработку персональных данных</label>
-                    </fieldset>
-                    <button type="button" class="button feedback-button">Оставить заявку</button>
-                </form>
-                <img src="img/map.jpg" width="474" height="734" alt="Карта">
             </div>
         </footer>
     </body>
