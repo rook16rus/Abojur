@@ -741,3 +741,34 @@ header:not(.mission-header) {
     grid-column: 1/-1;
     margin-top: 15px;
 }
+
+.collection {
+    padding: 140px 0 120px;
+}
+
+.collection-title {
+    margin-left: 99px;
+}
+
+.collection-text {
+    margin: 50px 0 40px 99px;
+    max-width: 570px;
+}
+
+.collection-list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.collection-item {
+    grid-column: span 6;
+}
+
+.collection-item-big {
+    grid-row: span 2;
+}
